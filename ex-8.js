@@ -375,4 +375,15 @@ const bills = [
 
 // Start coding here
 
-const totalPaidByLocation;
+
+
+const totalPaidByLocation = (bills) =>
+    bills.reduce(
+      (acc, bill) =>
+        bill.location && bill.total
+          ? ((acc[bill.location] = (acc[bill.location] ?? 0) + bill.total), acc)
+          : acc,
+      {}
+    );
+  
+  console.log(totalPaidByLocation(bills));
