@@ -7,7 +7,7 @@ function updateCarCollection(carBrand) {
         carCollection.indexOf(carBrand) + 1
       } position of car collection.`
     : carCollection.push(carBrand) &&
-        `new car collection is : ${carCollection.join(",")}.`;
+        `new car collection is : ${carCollection}.`;
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
